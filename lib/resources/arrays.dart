@@ -16,7 +16,7 @@ const motionToastIconsMD = {
   MotionToastType.success: Icons.check_circle_outline,
   MotionToastType.error: Icons.error,
   MotionToastType.warning: Icons.warning,
-  MotionToastType.info: Icons.info,
+  MotionToastType.info: Icons.logout_outlined
   MotionToastType.delete: Icons.delete
 };
 
