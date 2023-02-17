@@ -193,7 +193,7 @@ class MotionToast extends StatefulWidget {
     this.iconSize = 40,
     this.enableAnimation = true,
     this.layoutOrientation = ToastOrientation.ltr,
-    this.animationType = AnimationType.fromBottom,
+    this.animationType = AnimationType.fromLeft,
     this.animationDuration = const Duration(
       milliseconds: 1500,
     ),
@@ -213,7 +213,7 @@ class MotionToast extends StatefulWidget {
     motionToastType = MotionToastType.info;
     _initializeAnimationType();
     _assertValidValues();
-    _initializeParameters();
+    // _initializeParameters();
   }
 
   /// Render delete motion toast
@@ -234,7 +234,7 @@ class MotionToast extends StatefulWidget {
     this.iconSize = 40,
     this.enableAnimation = true,
     this.layoutOrientation = ToastOrientation.ltr,
-    this.animationType = AnimationType.fromBottom,
+    this.animationType = AnimationType.fromLeft,
     this.animationDuration = const Duration(
       milliseconds: 1500,
     ),
@@ -281,8 +281,8 @@ class MotionToast extends StatefulWidget {
 
   void _initializeAnimationType() {
     if (position == MotionToastPosition.bottom &&
-        animationType == AnimationType.fromTop) {
-      animationType = AnimationType.fromBottom;
+        animationType == AnimationType.fromLeft) {
+      animationType = AnimationType.fromLeft;
     } else if (position == MotionToastPosition.top &&
         animationType == AnimationType.fromBottom) {
       animationType = AnimationType.fromTop;
