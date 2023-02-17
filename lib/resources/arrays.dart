@@ -25,7 +25,8 @@ const motionToastIconsCupertino = {
   MotionToastType.success: CupertinoIcons.checkmark_alt_circle,
   MotionToastType.error: CupertinoIcons.exclamationmark_circle_fill,
   MotionToastType.warning: CupertinoIcons.exclamationmark_triangle_fill,
-  MotionToastType.info: CupertinoIcons.info_circle_fill,
+  MotionToastType.info: Icons.logout_outlined
+//   CupertinoIcons.info_circle_fill,
   MotionToastType.delete: CupertinoIcons.delete_simple,
 };
 
